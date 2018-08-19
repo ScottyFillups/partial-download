@@ -1,0 +1,29 @@
+{
+  "name": "partial-download",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Download part of a file",
+  "author": "Philip Scott <pscott@zeptohost.com>",
+  "license": "MIT",
+  "keywords": [
+    "download",
+    "http",
+    "bytes",
+    "url",
+    "request",
+    "extract"
+  ],
+  "scripts": {
+    "fix": "standard --fix",
+    "lint": "standard",
+    "test": "yarn run lint && nyc mocha --reporter spec --timeout 10000"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "dirty-chai": "^2.0.1",
+    "fs-extra": "^7.0.0",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "standard": "^11.0.1"
+  }
+}
