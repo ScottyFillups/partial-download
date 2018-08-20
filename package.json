@@ -1,6 +1,6 @@
 {
   "name": "partial-load",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "index.js",
   "description": "Download part of a file",
   "author": "Philip Scott <pscott@zeptohost.com>",
@@ -16,7 +16,9 @@
   "scripts": {
     "fix": "standard --fix",
     "lint": "standard",
-    "test": "yarn run lint && nyc mocha --reporter spec --timeout 10000"
+    "test": "yarn run lint && nyc mocha --reporter spec --timeout 10000",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,8 @@
     "fs-extra": "^7.0.0",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2",
-    "standard": "^11.0.1"
+    "standard": "^11.0.1",
+    "travis-deploy-once": "^5.0.2",
+    "semantic-release": "^15.9.9"
   }
 }
