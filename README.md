@@ -1,35 +1,35 @@
-# partial-download
+# partial-load
 
 Download part of a file.
 
 ## Installation
 
 ```bash
-$ yarn add partial-download
+$ yarn add partial-load
 
 # Or,
 
-$ npm install partial-download --save
+$ npm install partial-load --save
 ```
 
 ## Usage
 
 ```js
-const partialDownload = require('partial-download')
+const partialDownload = require('partial-load')
 
 const url = 'https://www.w3schools.com/html/mov_bbb.webm'
 const megabyte = 1024 * 1024
 
-// stop downloading once 1MB has been exceeded
-thumbnail(url, './output/file.webm', megabyte)
+// stop loading once 1MB has been exceeded
+partialDownload(url, './output/file.webm', megabyte)
   .then((bytes) => console.log('Downloaded ', bytes, ' bytes!'))
 ```
 
 ## API
 
-#### partialDownload(url, output, byteLimit)
+#### partialLoad(url, output, byteLimit)
 
-Returns of a `Promise` which resolves to the number of downloaded bytes.
+Returns of a `Promise` which resolves to the number of loaded bytes.
 
 #### url
 
@@ -47,4 +47,4 @@ The file path of the output, assumes directory exists.
 
 Type: `Number`
 
-The byte limit threshold; the download will stop once the byte limit has been exceeded.
+The byte limit threshold; the load will stop once the byte limit has been exceeded.
