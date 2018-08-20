@@ -1,5 +1,5 @@
 {
-  "name": "partial-download",
+  "name": "partial-load",
   "version": "1.0.0",
   "main": "index.js",
   "description": "Download part of a file",
